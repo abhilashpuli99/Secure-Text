@@ -1,0 +1,22 @@
+body { font-family: 'Inter', sans-serif; }
+.glass-effect { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+.dark .glass-effect { background: rgba(26, 32, 44, 0.2); border: 1px solid rgba(255, 255, 255, 0.1); }
+.blueprint { background-color: #0f172a; color: #e2e8f0; background-image: linear-gradient(rgba(63, 137, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(63, 137, 255, 0.1) 1px, transparent 1px); background-size: 20px 20px; }
+.blueprint .glass-effect { background: rgba(15, 23, 42, 0.6); border-color: rgba(63, 137, 255, 0.3); }
+.blueprint .ql-editor { color: #94a3b8; }
+.blueprint .ql-toolbar { border-bottom-color: rgba(63, 137, 255, 0.3) !important; }
+.blueprint .ql-snow .ql-stroke { stroke: #60a5fa; }
+.blueprint .ql-snow .ql-picker-label { color: #60a5fa; }
+.blueprint .ql-snow .ql-fill { fill: #60a5fa; }
+.ql-editor { min-height: calc(100vh - 250px); font-size: 16px; line-height: 1.6; }
+.dark .ql-editor { color: #e2e8f0; }
+.dark .ql-snow .ql-stroke { stroke: #cbd5e0; }
+.dark .ql-snow .ql-picker-label { color: #cbd5e0; }
+.dark .ql-snow .ql-fill { fill: #cbd5e0; }
+.fade-in { animation: fadeIn 0.5s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+.slide-in-left { animation: slideInLeft 0.5s ease-in-out; }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+.modal-overlay { animation: fadeIn 0.3s ease-in-out; }
+.modal-content { animation: slideInUp 0.4s ease-in-out; }
+@keyframes slideInUp { from { opacity: 0; transform: translateY(30px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
